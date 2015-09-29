@@ -3,7 +3,7 @@ package com.lessoner.treeores.IC2;
 import com.lessoner.treeores.IC2.Blocks.TreeOresIC2Blocks;
 import com.lessoner.treeores.IC2.Items.TreeOresIC2Items;
 import com.lessoner.treeores.References;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
 /**
@@ -11,11 +11,12 @@ import net.minecraftforge.oredict.OreDictionary;
  */
 public class TreeOresIC2 {
 
-    public static void preInit(){
+    public static void preInit() {
         TreeOresIC2Items.init();
         TreeOresIC2Blocks.init();
     }
-    public static void init(){
+
+    public static void init() {
         TreeOresIC2Blocks.registerBlocks();
         TreeOresIC2Items.registerItems();
         TreeOresIC2Recipes.addRecipes();
@@ -23,11 +24,14 @@ public class TreeOresIC2 {
 
     }
 
-    private static void OreDict(){
-        OreDictionary.registerOre(References.oreDictIC2Leaves, TreeOresIC2Blocks.TreeOresIC2Leaves);
-        OreDictionary.registerOre(References.oreDictIC2Leaves, TreeOresIC2Blocks.TreeOresIC2BossLeaves);
-        OreDictionary.registerOre(References.oreDictIC2Logs, TreeOresIC2Blocks.TreeOresIC2Logs);
-        OreDictionary.registerOre(References.oreDictIC2Saplings, TreeOresIC2Blocks.TreeOresIC2Saplings);
-        OreDictionary.registerOre(References.oreDictIC2Saplings, TreeOresIC2Blocks.TreeOresIC2BossSaplings);
+    private static void OreDict() {
+        for (int i = 0; i < 4; i++) {
+            OreDictionary.registerOre(References.oreDictIC2Leaves, new ItemStack(TreeOresIC2Blocks.TreeOresIC2Leaves, 1, i));
+            OreDictionary.registerOre(References.oreDictIC2Leaves, new ItemStack(TreeOresIC2Blocks.TreeOresIC2BossLeaves, 1, i));
+            OreDictionary.registerOre(References.oreDictIC2Logs, new ItemStack(TreeOresIC2Blocks.TreeOresIC2Logs, 1, i));
+            OreDictionary.registerOre(References.oreDictIC2Saplings, new ItemStack(TreeOresIC2Blocks.TreeOresIC2Saplings, 1, i));
+            OreDictionary.registerOre(References.oreDictIC2Saplings, new ItemStack(TreeOresIC2Blocks.TreeOresIC2BossSaplings, 1, i));
+
+        }
     }
 }

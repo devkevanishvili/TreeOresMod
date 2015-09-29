@@ -11,6 +11,10 @@ import com.lessoner.treeores.IC2.Renderers.RendererLeadBoss;
 import com.lessoner.treeores.IC2.Renderers.RendererTinBoss;
 import com.lessoner.treeores.IC2.Renderers.RendererUraniumBoss;
 import com.lessoner.treeores.Renderers.*;
+import com.lessoner.treeores.TConstruct.Entities.EntityArditeBoss;
+import com.lessoner.treeores.TConstruct.Entities.EntityCobaltBoss;
+import com.lessoner.treeores.TConstruct.Renderers.RendererArditeBoss;
+import com.lessoner.treeores.TConstruct.Renderers.RendererCobaltBoss;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Loader;
 
@@ -38,6 +42,10 @@ public class ClientProxy extends CommonProxy {
             RenderingRegistry.registerEntityRenderingHandler(EntityUraniumBoss.class, new RendererUraniumBoss(new ModelBoss(), 1.0F));
             RenderingRegistry.registerEntityRenderingHandler(EntityLeadBoss.class, new RendererLeadBoss(new ModelBoss(), 1.0F));
         }
+        if(Loader.isModLoaded("TConstruct")){
+            RenderingRegistry.registerEntityRenderingHandler(EntityArditeBoss.class, new RendererArditeBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityCobaltBoss.class, new RendererCobaltBoss(new ModelBoss(), 1.0F));
+        }
     }
 
     public void registerEntities() {
@@ -57,6 +65,10 @@ public class ClientProxy extends CommonProxy {
             EntityHandler.registerMonsters(EntityTinBoss.class, "TinTreeBoss", 12);
             EntityHandler.registerMonsters(EntityUraniumBoss.class, "UraniumTreeBoss", 13);
             EntityHandler.registerMonsters(EntityLeadBoss.class, "LeadTreeBoss", 14);
+        }
+        if(Loader.isModLoaded("TConstruct")){
+            EntityHandler.registerMonsters(EntityArditeBoss.class, "ArditeTreeBoss", 15);
+            EntityHandler.registerMonsters(EntityCobaltBoss.class, "CobaltTreeBoss", 16);
         }
     }
 }

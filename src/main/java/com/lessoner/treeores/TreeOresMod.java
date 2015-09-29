@@ -6,6 +6,7 @@ import com.lessoner.treeores.Handlers.UpdateHandler;
 import com.lessoner.treeores.IC2.TreeOresIC2;
 import com.lessoner.treeores.Items.TreeOresItems;
 import com.lessoner.treeores.Proxy.CommonProxy;
+import com.lessoner.treeores.TConstruct.TreeOresTConstruct;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -85,6 +86,14 @@ public class TreeOresMod {
             References.oreDictIC2Logs = config.getString("oreDictIC2Logs", "TreesIC2", "logWood", "Ore Dictionary name for ic2 logs");
             References.oreDictIC2Saplings = config.getString("oreDictIC2Saplings", "TreesIC2", "treeSapling", "Ore Dictionary name for ic2 saplings");
         }
+        if(Loader.isModLoaded("TConstruct")){
+            References.arditeTree = config.getBoolean("EnableArditeTreeCrafintg", "TreesTC", true, "Do you want to enable ardite sapling crafting recipe?");
+            References.cobaltTree = config.getBoolean("EnableCobaltTreeCrafting", "TreesTC", true, "Do you want to enable cobalt sapling crafting recipe?");
+
+            References.oreDictTCLeaves = config.getString("oreDictTCLeaves", "TreesTC", "treeLeaves", "Ore Dictionary name for tc leaves");
+            References.oreDictTCLogs = config.getString("oreDictTCLogs", "TreesTC", "logWood", "Ore Dictionary name for tc logs");
+            References.oreDictTCSaplings = config.getString("oreDictTCSaplings", "TreesTC", "treeSapling", "Ore Dictionary name for tc saplings");
+        }
 
         config.save();
 
@@ -100,6 +109,9 @@ public class TreeOresMod {
         if(Loader.isModLoaded("IC2")){
             TreeOresIC2.preInit();
         }
+        if(Loader.isModLoaded("TConstruct")){
+            TreeOresTConstruct.preInit();
+        }
     }
 
     @EventHandler
@@ -113,6 +125,9 @@ public class TreeOresMod {
         FMLCommonHandler.instance().bus().register(new UpdateHandler());
         if(Loader.isModLoaded("IC2")){
             TreeOresIC2.init();
+        }
+        if(Loader.isModLoaded("TConstruct")){
+            TreeOresTConstruct.init();
         }
     }
 

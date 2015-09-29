@@ -59,4 +59,14 @@ public class References {
     public static boolean tinTree;
     public static boolean uraniumTree;
     public static boolean leadTree;
+    //TConstruct
+    public static String arditeBossTexture = "treeores:textures/model/ic2/obsidianboss.png";
+    public static String cobaltBossTexture = "treeores:textures/model/ic2/quartzboss.png";
+
+    public static String oreDictTCLeaves;
+    public static String oreDictTCLogs;
+    public static String oreDictTCSaplings;
+
+    public static boolean arditeTree;
+    public static boolean cobaltTree;
 }
