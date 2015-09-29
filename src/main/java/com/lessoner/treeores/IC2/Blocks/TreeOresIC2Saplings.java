@@ -1,6 +1,5 @@
 package com.lessoner.treeores.IC2.Blocks;
 
-import com.lessoner.treeores.Blocks.TreeOresBlocks;
 import com.lessoner.treeores.IC2.WorldGen.WorldGenTreeOresIC2;
 import com.lessoner.treeores.References;
 import cpw.mods.fml.relauncher.Side;
@@ -152,7 +151,7 @@ public class TreeOresIC2Saplings extends BlockSapling{
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         for (int i = 0; i < I_ICONS.length; i++) {
-            I_ICONS[i] = iconRegister.registerIcon(References.MODID + ":" + this.getTextureName() + "_" + TreeOresIC2Logs.types[i]);
+            I_ICONS[i] = iconRegister.registerIcon(References.MODID + ":IC2/" + this.getTextureName() + "_" + TreeOresIC2Logs.types[i]);
         }
     }
 

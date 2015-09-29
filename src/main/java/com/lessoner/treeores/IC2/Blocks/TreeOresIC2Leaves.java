@@ -1,7 +1,7 @@
 package com.lessoner.treeores.IC2.Blocks;
 
-import com.lessoner.treeores.References;
 import com.lessoner.treeores.IC2.LeafColorsIC2;
+import com.lessoner.treeores.References;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -96,7 +96,7 @@ public class TreeOresIC2Leaves extends BlockOldLeaf {
             this.field_150129_M[i] = new IIcon[leaf_types[i].length];
 
             for (int j = 0; j < leaf_types[i].length; ++j) {
-                this.field_150129_M[i][j] = iconRegister.registerIcon(References.MODID + ":" + leaf_types[i][j]);
+                this.field_150129_M[i][j] = iconRegister.registerIcon(References.MODID + ":IC2/" + leaf_types[i][j]);
             }
         }
     }

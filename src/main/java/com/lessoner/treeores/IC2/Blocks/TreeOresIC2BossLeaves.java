@@ -21,7 +21,7 @@ import java.util.Random;
  * Created by Anguarmas on 9/28/2015.
  */
 public class TreeOresIC2BossLeaves extends BlockOldLeaf {
-    public static final String[][] leaf_types = new String[][]{{"bic2leaves_copper", "bic2leaves_tin", "bic2leaves_uranium", "bic2leaves_lead"}, {"bic2leaves_copper_opaque", "bic2leaves_tin_opaque", "bic2leaves_uranium_opaque", "bic2leaves_lead_opaque"}};
+    public static final String[][] leaf_types = new String[][]{{"tic2leaves_copper", "tic2leaves_tin", "tic2leaves_uranium", "tic2leaves_lead"}, {"tic2leaves_copper_opaque", "tic2leaves_tin_opaque", "tic2leaves_uranium_opaque", "tic2leaves_lead_opaque"}};
     private static final String __OBFID = "CL_00000280";
 
     /**
@@ -96,7 +96,7 @@ public class TreeOresIC2BossLeaves extends BlockOldLeaf {
             this.field_150129_M[i] = new IIcon[leaf_types[i].length];
 
             for (int j = 0; j < leaf_types[i].length; ++j) {
-                this.field_150129_M[i][j] = iconRegister.registerIcon(References.MODID + ":" + leaf_types[i][j]);
+                this.field_150129_M[i][j] = iconRegister.registerIcon(References.MODID + ":IC2/" + leaf_types[i][j]);
             }
         }
     }

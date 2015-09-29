@@ -21,8 +21,8 @@ public class TreeOresIC2Blocks {
         TreeOresIC2Logs = new TreeOresIC2Logs().setBlockTextureName("tic2logs").setBlockName("tic2logs").setCreativeTab(TreeOresMod.treeOresTab);
         TreeOresIC2Leaves = new TreeOresIC2Leaves().setBlockTextureName("tic2leaves").setBlockName("tic2leaves").setCreativeTab(TreeOresMod.treeOresTab);
         TreeOresIC2Saplings = new TreeOresIC2Saplings().setBlockTextureName("tic2saplings").setBlockName("tic2saplings").setCreativeTab(TreeOresMod.treeOresTab);
-        TreeOresIC2BossLeaves = new TreeOresIC2BossLeaves().setBlockTextureName("bic2leaves").setBlockName("bic2leaves").setCreativeTab(null);
-        TreeOresIC2BossSaplings = new TreeOresIC2BossSaplings().setBlockTextureName("bic2saplings").setBlockName("bic2saplings").setCreativeTab(TreeOresMod.treeOresTab);
+        TreeOresIC2BossLeaves = new TreeOresIC2BossLeaves().setBlockTextureName("tic2leaves").setBlockName("bic2leaves").setCreativeTab(null);
+        TreeOresIC2BossSaplings = new TreeOresIC2BossSaplings().setBlockTextureName("tic2saplings").setBlockName("bic2saplings").setCreativeTab(TreeOresMod.treeOresTab);
     }
 
     public static void registerBlocks() {

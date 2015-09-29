@@ -1,7 +1,7 @@
 package com.lessoner.treeores.IC2.Blocks;
 
-import com.lessoner.treeores.References;
 import com.lessoner.treeores.IC2.Items.TreeOresIC2Items;
+import com.lessoner.treeores.References;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.BlockOldLog;
@@ -60,8 +60,8 @@ public class TreeOresIC2Logs extends BlockOldLog {
         this.field_150166_b = new IIcon[types.length];
 
         for (int i = 0; i < this.field_150167_a.length; ++i) {
-            this.field_150167_a[i] = iconRegister.registerIcon(References.MODID + ":" + this.getTextureName() + "_" + types[i]);
-            this.field_150166_b[i] = iconRegister.registerIcon(References.MODID + ":" + this.getTextureName() + "_" + types[i] + "_top");
+            this.field_150167_a[i] = iconRegister.registerIcon(References.MODID + ":IC2/" + this.getTextureName() + "_" + types[i]);
+            this.field_150166_b[i] = iconRegister.registerIcon(References.MODID + ":IC2/" + this.getTextureName() + "_" + types[i] + "_top");
         }
     }
 }
