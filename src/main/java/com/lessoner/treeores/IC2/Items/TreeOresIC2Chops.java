@@ -58,7 +58,7 @@ public class TreeOresIC2Chops extends Item {
         this.iicon = new IIcon[TreeOresIC2Logs.types.length];
 
         for (int i = 0; i < TreeOresIC2Logs.types.length; ++i) {
-            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":" + this.getIconString() + "_" + TreeOresIC2Logs.types[i]);
+            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":IC2/" + this.getIconString() + "_" + TreeOresIC2Logs.types[i]);
         }
     }
 }

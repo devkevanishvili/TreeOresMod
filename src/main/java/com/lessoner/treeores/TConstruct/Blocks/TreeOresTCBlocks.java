@@ -22,8 +22,8 @@ public class TreeOresTCBlocks{
         TreeOresTCLeaves = new TreeOresTCLeaves().setBlockName("ttcleaves").setBlockTextureName("ttcleaves").setCreativeTab(TreeOresMod.treeOresTab);
         TreeOresTCSaplings = new TreeOresTCSaplings().setBlockName("ttcsaplings").setBlockTextureName("ttcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
 
-        TreeOresTCBossLeaves = new TreeOresTCBossLeaves().setBlockName("btcleaves").setBlockTextureName("btcleaves").setCreativeTab(null);
-        TreeOresTCBossSaplings = new TreeOresTCBossSaplings().setBlockName("btcsaplings").setBlockTextureName("btcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
+        TreeOresTCBossLeaves = new TreeOresTCBossLeaves().setBlockName("btcleaves").setBlockTextureName("ttcleaves").setCreativeTab(null);
+        TreeOresTCBossSaplings = new TreeOresTCBossSaplings().setBlockName("btcsaplings").setBlockTextureName("ttcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
     }
 
     public static void registerBlocks(){

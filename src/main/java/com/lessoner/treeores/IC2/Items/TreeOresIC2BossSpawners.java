@@ -1,11 +1,10 @@
 package com.lessoner.treeores.IC2.Items;
 
-import com.lessoner.treeores.Entities.EntityCoalBossSpawner;
-import com.lessoner.treeores.Entities.EntityGoldBossSpawner;
-import com.lessoner.treeores.Entities.EntityIronBossSpawner;
-import com.lessoner.treeores.Entities.EntityRedstoneBossSpawner;
 import com.lessoner.treeores.IC2.Blocks.TreeOresIC2Logs;
-import com.lessoner.treeores.IC2.Entities.*;
+import com.lessoner.treeores.IC2.Entities.EntityCopperBossSpawner;
+import com.lessoner.treeores.IC2.Entities.EntityLeadBossSpawner;
+import com.lessoner.treeores.IC2.Entities.EntityTinBossSpawner;
+import com.lessoner.treeores.IC2.Entities.EntityUraniumBossSpawner;
 import com.lessoner.treeores.References;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -65,7 +64,7 @@ public class TreeOresIC2BossSpawners extends Item {
         this.iicon = new IIcon[TreeOresIC2Logs.types.length];
 
         for (int i = 0; i < TreeOresIC2Logs.types.length; ++i) {
-            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":" + this.getIconString() + "_" + TreeOresIC2Logs.types[i]);
+            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":IC2/" + this.getIconString() + "_" + TreeOresIC2Logs.types[i]);
         }
     }
 

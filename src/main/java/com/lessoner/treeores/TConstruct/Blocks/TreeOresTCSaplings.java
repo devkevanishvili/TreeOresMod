@@ -1,10 +1,7 @@
 package com.lessoner.treeores.TConstruct.Blocks;
 
-import com.lessoner.treeores.Blocks.TreeOresBlocks;
-import com.lessoner.treeores.Blocks.TreeOresLogs1;
 import com.lessoner.treeores.References;
 import com.lessoner.treeores.TConstruct.WorldGen.WorldGenTCTreeOres;
-import com.lessoner.treeores.WorldGen.WorldGenTreeOres1;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -149,7 +146,7 @@ public class TreeOresTCSaplings extends BlockSapling {
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister iconRegister) {
         for (int i = 0; i < I_ICONS.length; i++) {
-            I_ICONS[i] = iconRegister.registerIcon(References.MODID + ":" + this.getTextureName() + "_" + TreeOresTCLogs.types[i]);
+            I_ICONS[i] = iconRegister.registerIcon(References.MODID + ":TConstruct/" + this.getTextureName() + "_" + TreeOresTCLogs.types[i]);
         }
     }
 

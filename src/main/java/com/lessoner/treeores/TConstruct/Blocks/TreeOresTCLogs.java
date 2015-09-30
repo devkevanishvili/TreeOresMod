@@ -1,6 +1,5 @@
 package com.lessoner.treeores.TConstruct.Blocks;
 
-import com.lessoner.treeores.Items.TreeOresItems;
 import com.lessoner.treeores.References;
 import com.lessoner.treeores.TConstruct.Items.TreeOresTCItems;
 import cpw.mods.fml.relauncher.Side;
@@ -59,8 +58,8 @@ public class TreeOresTCLogs extends BlockOldLog {
         this.field_150166_b = new IIcon[types.length];
 
         for (int i = 0; i < this.field_150167_a.length; ++i) {
-            this.field_150167_a[i] = iconRegister.registerIcon(References.MODID + ":" + this.getTextureName() + "_" + types[i]);
-            this.field_150166_b[i] = iconRegister.registerIcon(References.MODID + ":" + this.getTextureName() + "_" + types[i] + "_top");
+            this.field_150167_a[i] = iconRegister.registerIcon(References.MODID + ":TConstruct/" + this.getTextureName() + "_" + types[i]);
+            this.field_150166_b[i] = iconRegister.registerIcon(References.MODID + ":TConstruct/" + this.getTextureName() + "_" + types[i] + "_top");
         }
     }
 }

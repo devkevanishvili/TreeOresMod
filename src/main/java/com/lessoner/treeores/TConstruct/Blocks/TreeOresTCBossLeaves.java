@@ -89,7 +89,7 @@ public class TreeOresTCBossLeaves extends BlockOldLeaf {
             this.field_150129_M[i] = new IIcon[leaf_types[i].length];
 
             for (int j = 0; j < leaf_types[i].length; ++j) {
-                this.field_150129_M[i][j] = iconRegister.registerIcon(References.MODID + ":" + leaf_types[i][j]);
+                this.field_150129_M[i][j] = iconRegister.registerIcon(References.MODID + ":TConstruct/" + leaf_types[i][j]);
             }
         }
     }
