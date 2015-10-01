@@ -46,10 +46,10 @@ public class References {
     public static String glowstoneBossTexture = "treeores:textures/model/glowstoneboss.png";
     public static String xpBossTexture = "treeores:textures/model/xpboss.png";
     //IC2
-    public static String copperBossTexture = "treeores:textures/model/ic2/obsidianboss.png";
-    public static String tinBossTexture = "treeores:textures/model/ic2/quartzboss.png";
-    public static String uraniumBossTexture = "treeores:textures/model/ic2/glowstoneboss.png";
-    public static String leadBossTexture = "treeores:textures/model/ic2/xpboss.png";
+    public static String copperBossTexture = "treeores:textures/model/IC2/copperboss.png";
+    public static String tinBossTexture = "treeores:textures/model/IC2/tinboss.png";
+    public static String uraniumBossTexture = "treeores:textures/model/IC2/uraniumboss.png";
+    public static String leadBossTexture = "treeores:textures/model/IC2/leadboss.png";
 
     public static String oreDictIC2Leaves;
     public static String oreDictIC2Logs;
@@ -59,9 +59,31 @@ public class References {
     public static boolean tinTree;
     public static boolean uraniumTree;
     public static boolean leadTree;
+    //Thaumcraft
+    public static String thaumiumBossTexture = "treeores:textures/model/THC/thaumiumboss.png";
+    public static String airBossTexture = "treeores:textures/model/THC/airboss.png";
+    public static String fireBossTexture = "treeores:textures/model/THC/fireboss.png";
+    public static String waterBossTexture = "treeores:textures/model/THC/waterboss.png";
+    public static String earthBossTexture = "treeores:textures/model/THC/earthboss.png";
+    public static String orderBossTexture = "treeores:textures/model/THC/orderboss.png";
+    public static String entropyBossTexture = "treeores:textures/model/THC/entropyboss.png";
+    public static String cinnabarBossTexture = "treeores:textures/model/THC/cinnabarboss.png";
+
+    public static String oreDictTHCLeaves;
+    public static String oreDictTHCLogs;
+    public static String oreDictTHCSaplings;
+
+    public static boolean thaumiumTree;
+    public static boolean airTree;
+    public static boolean fireTree;
+    public static boolean waterTree;
+    public static boolean earthTree;
+    public static boolean orderTree;
+    public static boolean entropyTree;
+    public static boolean cinnabarTree;
     //TConstruct
-    public static String arditeBossTexture = "treeores:textures/model/ic2/obsidianboss.png";
-    public static String cobaltBossTexture = "treeores:textures/model/ic2/quartzboss.png";
+    public static String arditeBossTexture = "treeores:textures/model/TConstruct/arditeboss.png";
+    public static String cobaltBossTexture = "treeores:textures/model/TConstruct/cobaltboss.png";
 
     public static String oreDictTCLeaves;
     public static String oreDictTCLogs;

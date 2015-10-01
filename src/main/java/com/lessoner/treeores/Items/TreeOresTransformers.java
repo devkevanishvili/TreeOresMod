@@ -23,6 +23,7 @@ public class TreeOresTransformers extends Item {
     public TreeOresTransformers() {
         this.setHasSubtypes(true);
         this.setMaxDamage(0);
+        this.setContainerItem(this);
     }
 
     /**
@@ -32,6 +33,11 @@ public class TreeOresTransformers extends Item {
     public IIcon getIconFromDamage(int damage) {
         int j = MathHelper.clamp_int(damage, 0, 2);
         return this.iicon[j];
+    }
+
+    public ItemStack getContainerItem(ItemStack is) {
+        int i = MathHelper.clamp_int(is.getItemDamage(), 0, 2);
+        return new ItemStack(this, 1, i);
     }
 
     /**

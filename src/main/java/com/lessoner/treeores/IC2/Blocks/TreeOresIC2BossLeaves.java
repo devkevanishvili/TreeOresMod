@@ -48,16 +48,16 @@ public class TreeOresIC2BossLeaves extends BlockOldLeaf {
 
     protected void func_150124_c(World world, int x, int y, int z, int meta, int i) {
         if (((meta & 3) == 0) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "copperIngot")));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "itemIngot"), 1, 0));
         }
         if (((meta & 3) == 1) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "tinIngot")));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "itemIngot"), 1, 1));
         }
         if (((meta & 3) == 2) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "uraniumIngot")));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "itemUran238")));
         }
         if (((meta & 3) == 3) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "leadIngot")));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("IC2", "itemIngot"), 1, 5));
         }
     }
 

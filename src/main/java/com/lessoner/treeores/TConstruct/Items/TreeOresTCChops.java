@@ -1,6 +1,5 @@
 package com.lessoner.treeores.TConstruct.Items;
 
-import com.lessoner.treeores.IC2.Blocks.TreeOresIC2Logs;
 import com.lessoner.treeores.References;
 import com.lessoner.treeores.TConstruct.Blocks.TreeOresTCLogs;
 import cpw.mods.fml.relauncher.Side;
@@ -59,7 +58,7 @@ public class TreeOresTCChops extends Item {
         this.iicon = new IIcon[TreeOresTCLogs.types.length];
 
         for (int i = 0; i < TreeOresTCLogs.types.length; ++i) {
-            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":" + this.getIconString() + "_" + TreeOresTCLogs.types[i]);
+            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":TConstruct/" + this.getIconString() + "_" + TreeOresTCLogs.types[i]);
         }
     }
 }

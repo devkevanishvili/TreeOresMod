@@ -1,10 +1,5 @@
 package com.lessoner.treeores.TConstruct.Items;
 
-import com.lessoner.treeores.IC2.Blocks.TreeOresIC2Logs;
-import com.lessoner.treeores.IC2.Entities.EntityCopperBossSpawner;
-import com.lessoner.treeores.IC2.Entities.EntityLeadBossSpawner;
-import com.lessoner.treeores.IC2.Entities.EntityTinBossSpawner;
-import com.lessoner.treeores.IC2.Entities.EntityUraniumBossSpawner;
 import com.lessoner.treeores.References;
 import com.lessoner.treeores.TConstruct.Blocks.TreeOresTCLogs;
 import com.lessoner.treeores.TConstruct.Entities.EntityArditeBossSpawner;
@@ -67,7 +62,7 @@ public class TreeOresTCBossSpawners extends Item {
         this.iicon = new IIcon[TreeOresTCLogs.types.length];
 
         for (int i = 0; i < TreeOresTCLogs.types.length; ++i) {
-            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":" + this.getIconString() + "_" + TreeOresTCLogs.types[i]);
+            this.iicon[i] = iconRegister.registerIcon(References.MODID + ":TConstruct/" + this.getIconString() + "_" + TreeOresTCLogs.types[i]);
         }
     }
 
