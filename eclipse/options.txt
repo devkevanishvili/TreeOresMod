@@ -94,7 +94,11 @@ key_key.tarmor:24
 key_key.tgoggles:34
 key_key.tbelt:48
 key_key.tzoom:44
-soundCategory_master:1.0
+key_Baubles Inventory:48
+key_Change Wand Focus:33
+key_Activate Hover Harness:35
+key_Misc Wand Toggle:34
+soundCategory_master:0.049668875
 soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

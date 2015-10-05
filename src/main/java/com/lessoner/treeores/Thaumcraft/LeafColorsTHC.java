@@ -18,7 +18,7 @@ public class LeafColorsTHC {
     }
 
     public static int fire() {
-        Color fire = new Color(282, 8, 8, 0);
+        Color fire = new Color(252, 8, 8, 0);
         return fire.getRGB();
     }
 

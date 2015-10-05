@@ -15,6 +15,8 @@ import com.lessoner.treeores.TConstruct.Entities.EntityArditeBoss;
 import com.lessoner.treeores.TConstruct.Entities.EntityCobaltBoss;
 import com.lessoner.treeores.TConstruct.Renderers.RendererArditeBoss;
 import com.lessoner.treeores.TConstruct.Renderers.RendererCobaltBoss;
+import com.lessoner.treeores.Thaumcraft.Entities.*;
+import com.lessoner.treeores.Thaumcraft.Renderers.*;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Loader;
 
@@ -41,6 +43,16 @@ public class ClientProxy extends CommonProxy {
             RenderingRegistry.registerEntityRenderingHandler(EntityTinBoss.class, new RendererTinBoss(new ModelBoss(), 1.0F));
             RenderingRegistry.registerEntityRenderingHandler(EntityUraniumBoss.class, new RendererUraniumBoss(new ModelBoss(), 1.0F));
             RenderingRegistry.registerEntityRenderingHandler(EntityLeadBoss.class, new RendererLeadBoss(new ModelBoss(), 1.0F));
+        }
+        if (Loader.isModLoaded("Thaumcraft")) {
+            RenderingRegistry.registerEntityRenderingHandler(EntityThaumiumBoss.class, new RendererThaumiumBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityAirBoss.class, new RendererAirBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityFireBoss.class, new RendererFireBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityWaterBoss.class, new RendererWaterBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityEarthBoss.class, new RendererEarthBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityOrderBoss.class, new RendererOrderBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityEntropyBoss.class, new RendererEntropyBoss(new ModelBoss(), 1.0F));
+            RenderingRegistry.registerEntityRenderingHandler(EntityCinnabarBoss.class, new RendererCinnabarBoss(new ModelBoss(), 1.0F));
         }
         if(Loader.isModLoaded("TConstruct")){
             RenderingRegistry.registerEntityRenderingHandler(EntityArditeBoss.class, new RendererArditeBoss(new ModelBoss(), 1.0F));
@@ -69,6 +81,16 @@ public class ClientProxy extends CommonProxy {
         if(Loader.isModLoaded("TConstruct")){
             EntityHandler.registerMonsters(EntityArditeBoss.class, "ArditeTreeBoss", 15);
             EntityHandler.registerMonsters(EntityCobaltBoss.class, "CobaltTreeBoss", 16);
+        }
+        if (Loader.isModLoaded("Thaumcraft")) {
+            EntityHandler.registerMonsters(EntityThaumiumBoss.class, "ThaumiumTreeBoss", 17);
+            EntityHandler.registerMonsters(EntityAirBoss.class, "AirTreeBoss", 18);
+            EntityHandler.registerMonsters(EntityFireBoss.class, "FireTreeBoss", 19);
+            EntityHandler.registerMonsters(EntityWaterBoss.class, "WaterTreeBoss", 20);
+            EntityHandler.registerMonsters(EntityEarthBoss.class, "EarthTreeBoss", 21);
+            EntityHandler.registerMonsters(EntityOrderBoss.class, "OrderTreeBoss", 22);
+            EntityHandler.registerMonsters(EntityEntropyBoss.class, "EntropyTreeBoss", 23);
+            EntityHandler.registerMonsters(EntityCinnabarBoss.class, "CinnabarTreeBoss", 24);
         }
     }
 }

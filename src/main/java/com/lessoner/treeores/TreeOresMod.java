@@ -7,6 +7,7 @@ import com.lessoner.treeores.IC2.TreeOresIC2;
 import com.lessoner.treeores.Items.TreeOresItems;
 import com.lessoner.treeores.Proxy.CommonProxy;
 import com.lessoner.treeores.TConstruct.TreeOresTConstruct;
+import com.lessoner.treeores.Thaumcraft.TreeOresThaumcraft;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -15,7 +16,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameData;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
@@ -86,6 +86,20 @@ public class TreeOresMod {
             References.oreDictIC2Logs = config.getString("oreDictIC2Logs", "TreesIC2", "logWood", "Ore Dictionary name for ic2 logs");
             References.oreDictIC2Saplings = config.getString("oreDictIC2Saplings", "TreesIC2", "treeSapling", "Ore Dictionary name for ic2 saplings");
         }
+        if (Loader.isModLoaded("Thaumcraft")) {
+            References.thaumiumTree = config.getBoolean("EnableThaumiumTreeCrafting", "TreesTHC", true, "Do you want to enable thaumium sapling crafting recipe?");
+            References.airTree = config.getBoolean("EnableAirTreeCrafting", "TreesTHC", true, "Do you want to enable air sapling crafting recipe?");
+            References.fireTree = config.getBoolean("EnableFireTreeCrafting", "TreesTHC", true, "Do you want to enable fire sapling crafting recipe?");
+            References.waterTree = config.getBoolean("EnableWaterTreeCrafting", "TreesTHC", true, "Do you want to enable water sapling crafting recipe?");
+            References.earthTree = config.getBoolean("EnableEarthTreeCrafting", "TreesTHC", true, "Do you want to enable earth sapling crafting recipe?");
+            References.orderTree = config.getBoolean("EnableOrderTreeCrafting", "TreesTHC", true, "Do you want to enable order sapling crafting recipe?");
+            References.entropyTree = config.getBoolean("EnableEntropyTreeCrafting", "TreesTHC", true, "Do you want to enable entropy sapling crafting recipe?");
+            References.cinnabarTree = config.getBoolean("EnableCinnabarTreeCrafting", "TreesTHC", true, "Do you want to enable cinnabar sapling crafting recipe?");
+
+            References.oreDictTHCLeaves = config.getString("oreDictTHCLeaves", "TreesTHC", "treeLeaves", "Ore Dictionary name for thaumcraft leaves");
+            References.oreDictTHCLogs = config.getString("oreDictTHCLogs", "TreesTHC", "logWood", "Ore Dictionary name for thaumcraft logs");
+            References.oreDictTHCSaplings = config.getString("oreDictTHCSaplings", "TreesTHC", "treeSapling", "Ore Dictionary name for thaumcraft saplings");
+        }
         if(Loader.isModLoaded("TConstruct")){
             References.arditeTree = config.getBoolean("EnableArditeTreeCrafintg", "TreesTC", true, "Do you want to enable ardite sapling crafting recipe?");
             References.cobaltTree = config.getBoolean("EnableCobaltTreeCrafting", "TreesTC", true, "Do you want to enable cobalt sapling crafting recipe?");
@@ -112,6 +126,9 @@ public class TreeOresMod {
         if(Loader.isModLoaded("TConstruct")){
             TreeOresTConstruct.preInit();
         }
+        if (Loader.isModLoaded("Thaumcraft")) {
+            TreeOresThaumcraft.preInit();
+        }
     }
 
     @EventHandler
@@ -128,6 +145,9 @@ public class TreeOresMod {
         }
         if(Loader.isModLoaded("TConstruct")){
             TreeOresTConstruct.init();
+        }
+        if (Loader.isModLoaded("Thaumcraft")) {
+            TreeOresThaumcraft.init();
         }
     }
 

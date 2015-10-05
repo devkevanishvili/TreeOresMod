@@ -36,8 +36,8 @@ public class TreeOresTHCBlocks {
         TreeOresTHCSaplings1 = new TreeOresTHCSaplings1().setBlockName("tthcsaplings1").setBlockTextureName("tthcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
         TreeOresTHCSaplings2 = new TreeOresTHCSaplings2().setBlockName("tthcsaplings2").setBlockTextureName("tthcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
 
-        TreeOresTHCBossLeaves1 = new TreeOresTHCBossLeaves1().setBlockName("bthcleaves1").setBlockTextureName("tthcleaves").setCreativeTab(TreeOresMod.treeOresTab);
-        TreeOresTHCBossLeaves2 = new TreeOresTHCBossLeaves2().setBlockName("bthcleaves2").setBlockTextureName("tthcleaves").setCreativeTab(TreeOresMod.treeOresTab);
+        TreeOresTHCBossLeaves1 = new TreeOresTHCBossLeaves1().setBlockName("bthcleaves1").setBlockTextureName("tthcleaves").setCreativeTab(null);
+        TreeOresTHCBossLeaves2 = new TreeOresTHCBossLeaves2().setBlockName("bthcleaves2").setBlockTextureName("tthcleaves").setCreativeTab(null);
 
         TreeOresTHCBossSaplings1 = new TreeOresTHCBossSaplings1().setBlockName("bthcsaplings1").setBlockTextureName("tthcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
         TreeOresTHCBossSaplings2 = new TreeOresTHCBossSaplings2().setBlockName("bthcsaplings2").setBlockTextureName("tthcsaplings").setCreativeTab(TreeOresMod.treeOresTab);

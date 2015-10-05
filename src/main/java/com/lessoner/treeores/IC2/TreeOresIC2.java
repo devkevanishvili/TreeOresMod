@@ -19,8 +19,8 @@ public class TreeOresIC2 {
     public static void init() {
         TreeOresIC2Blocks.registerBlocks();
         TreeOresIC2Items.registerItems();
-        TreeOresIC2Recipes.addRecipes();
         OreDict();
+        TreeOresIC2Recipes.addRecipes();
 
     }
 
