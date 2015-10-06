@@ -14,9 +14,10 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 public class TreeOresTHCRecipes {
     public static void addRecipes() {
         addTreeOresTHCLog1Recipes();
-        addTreeOresTHCSaplingRecipes();
+        addTreeOresTHCLog2Recipes();
         addTreeOresTHCChopsRecipes();
         addTreeOresTHCSpawnerRecipes();
+        addTreeOresTHCSaplingRecipes();
     }
 
     private static void addTreeOresTHCLog1Recipes() {
@@ -165,28 +166,28 @@ public class TreeOresTHCRecipes {
 
     private static void addTreeOresTHCSaplingRecipes() {
         if (References.thaumiumTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 0), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCosmeticSolid"), 1, 4), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 0), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCosmeticSolid"), 1, 4), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.airTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 1), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCrystal"), 1, 0), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 1), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCrystal"), 1, 0), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.fireTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 2), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCrystal"), 1, 1), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 2), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCrystal"), 1, 1), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.waterTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 3), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCrystal"), 1, 2), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings1, 1, 3), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCrystal"), 1, 2), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.earthTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 0), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCrystal"), 1, 3), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 0), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCrystal"), 1, 3), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.orderTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 1), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCrystal"), 1, 4), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 1), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCrystal"), 1, 4), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.entropyTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 2), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "BlockCrystal"), 1, 5), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 2), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "blockCrystal"), 1, 5), Character.valueOf('S'), "treeSapling"}));
         }
         if (References.cinnabarTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 3), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "ItemResource"), 1, 3), Character.valueOf('S'), "TreeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresTHCBlocks.TreeOresTHCSaplings2, 1, 3), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), new ItemStack(GameRegistry.findBlock("Thaumcraft", "itemResource"), 1, 3), Character.valueOf('S'), "treeSapling"}));
         }
     }
 

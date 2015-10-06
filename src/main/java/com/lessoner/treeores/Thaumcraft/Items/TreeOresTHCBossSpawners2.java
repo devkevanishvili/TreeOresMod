@@ -1,11 +1,11 @@
 package com.lessoner.treeores.Thaumcraft.Items;
 
-import com.lessoner.treeores.IC2.Entities.EntityCopperBossSpawner;
-import com.lessoner.treeores.IC2.Entities.EntityLeadBossSpawner;
-import com.lessoner.treeores.IC2.Entities.EntityTinBossSpawner;
-import com.lessoner.treeores.IC2.Entities.EntityUraniumBossSpawner;
 import com.lessoner.treeores.References;
 import com.lessoner.treeores.Thaumcraft.Blocks.TreeOresTHCLogs2;
+import com.lessoner.treeores.Thaumcraft.Entities.EntityCinnabarBossSpawner;
+import com.lessoner.treeores.Thaumcraft.Entities.EntityEarthBossSpawner;
+import com.lessoner.treeores.Thaumcraft.Entities.EntityEntropyBossSpawner;
+import com.lessoner.treeores.Thaumcraft.Entities.EntityOrderBossSpawner;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -76,16 +76,16 @@ public class TreeOresTHCBossSpawners2 extends Item {
         if (!w.isRemote) {
             switch (ie.getItemDamage()) {
                 case 0:
-                    w.spawnEntityInWorld(new EntityCopperBossSpawner(w, p)); //TODO: Change this
+                    w.spawnEntityInWorld(new EntityEarthBossSpawner(w, p));
                     break;
                 case 1:
-                    w.spawnEntityInWorld(new EntityTinBossSpawner(w, p));
+                    w.spawnEntityInWorld(new EntityOrderBossSpawner(w, p));
                     break;
                 case 2:
-                    w.spawnEntityInWorld(new EntityUraniumBossSpawner(w, p));
+                    w.spawnEntityInWorld(new EntityEntropyBossSpawner(w, p));
                     break;
                 case 3:
-                    w.spawnEntityInWorld(new EntityLeadBossSpawner(w, p));
+                    w.spawnEntityInWorld(new EntityCinnabarBossSpawner(w, p));
                     break;
             }
         }

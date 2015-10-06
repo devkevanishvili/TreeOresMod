@@ -48,16 +48,16 @@ public class TreeOresTHCBossLeaves1 extends BlockOldLeaf {
 
     protected void func_150124_c(World world, int x, int y, int z, int meta, int i) {
         if (((meta & 3) == 0) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "ItemResource"), 1, 2));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "itemResource"), 1, 2));
         }
         if (((meta & 3) == 1) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "ItemShard"), 1, 0));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "itemShard"), 1, 0));
         }
         if (((meta & 3) == 2) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "ItemShard"), 1, 1));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "itemShard"), 1, 1));
         }
         if (((meta & 3) == 3) && (world.rand.nextInt(i) == 0)) {
-            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "ItemShard"), 1, 2));
+            this.dropBlockAsItem(world, x, y, z, new ItemStack(GameRegistry.findItem("Thaumcraft", "itemShard"), 1, 2));
         }
     }
 

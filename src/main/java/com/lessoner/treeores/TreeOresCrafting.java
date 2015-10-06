@@ -230,13 +230,13 @@ public class TreeOresCrafting {
             GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings2, 1, 3), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), Blocks.obsidian, Character.valueOf('S'), "treeSapling"}));
         }
         if (References.quartzTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings3, 1, 1), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), Blocks.quartz_block, Character.valueOf('S'), "treeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings3, 1, 0), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), Blocks.quartz_block, Character.valueOf('S'), "treeSapling"}));
         }
         if (References.glowstoneTree) {
-            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings3, 1, 2), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), Blocks.glowstone, Character.valueOf('S'), "treeSapling"}));
+            GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings3, 1, 1), new Object[]{"XXX", "XSX", "XXX", Character.valueOf('X'), Blocks.glowstone, Character.valueOf('S'), "treeSapling"}));
         }
         if (References.xpTree) {
-            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings3, 1, 0), new Object[]{new ItemStack(Items.string), new ItemStack(Items.spider_eye), new ItemStack(Items.rotten_flesh), new ItemStack(Items.gunpowder), new ItemStack(Items.bone), new ItemStack(Items.diamond_sword), new ItemStack(Items.bow), new ItemStack(Items.arrow), "treeSapling"}));
+            GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TreeOresBlocks.TreeOresSaplings3, 1, 2), new Object[]{new ItemStack(Items.string), new ItemStack(Items.spider_eye), new ItemStack(Items.rotten_flesh), new ItemStack(Items.gunpowder), new ItemStack(Items.bone), new ItemStack(Items.diamond_sword), new ItemStack(Items.bow), new ItemStack(Items.arrow), "treeSapling"}));
         }
     }
 
