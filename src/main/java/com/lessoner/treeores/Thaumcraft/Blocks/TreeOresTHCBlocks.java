@@ -4,6 +4,7 @@ import com.lessoner.treeores.Thaumcraft.ItemBlocks.*;
 import com.lessoner.treeores.TreeOresMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 
 /**
  * Created by Anguarmas on 10/1/2015.
@@ -41,6 +42,8 @@ public class TreeOresTHCBlocks {
 
         TreeOresTHCBossSaplings1 = new TreeOresTHCBossSaplings1().setBlockName("bthcsaplings1").setBlockTextureName("tthcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
         TreeOresTHCBossSaplings2 = new TreeOresTHCBossSaplings2().setBlockName("bthcsaplings2").setBlockTextureName("tthcsaplings").setCreativeTab(TreeOresMod.treeOresTab);
+
+
     }
 
     public static void registerBlocks() {
@@ -59,5 +62,11 @@ public class TreeOresTHCBlocks {
 
         GameRegistry.registerBlock(TreeOresTHCBossSaplings1, TreeOresTHCBossSaplings1ItemBlock.class, TreeOresTHCBossSaplings1.getUnlocalizedName());
         GameRegistry.registerBlock(TreeOresTHCBossSaplings2, TreeOresTHCBossSaplings2ItemBlock.class, TreeOresTHCBossSaplings2.getUnlocalizedName());
+        Blocks.fire.setFireInfo(TreeOresTHCLogs1, 5, 5);
+        Blocks.fire.setFireInfo(TreeOresTHCLeaves1, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresTHCBossLeaves1, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresTHCLogs2, 5, 5);
+        Blocks.fire.setFireInfo(TreeOresTHCLeaves2, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresTHCBossLeaves2, 30, 60);
     }
 }

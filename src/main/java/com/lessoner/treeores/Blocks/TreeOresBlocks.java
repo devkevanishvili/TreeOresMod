@@ -4,6 +4,7 @@ import com.lessoner.treeores.ItemBlocks.*;
 import com.lessoner.treeores.TreeOresMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 
 /**
  * Created by Anguarmas on 9/22/2015.
@@ -55,10 +56,10 @@ public class TreeOresBlocks {
         TreeOresBossSaplings3 = new TreeOresBossSaplings3().setBlockName("bsaplings3").setBlockTextureName("tsaplings3").setCreativeTab(TreeOresMod.treeOresTab);
 
 
+
     }
 
     public static void registerBlocks() {
-
         GameRegistry.registerBlock(TreeOresLogs1, TreeOresLogs1ItemBlock.class, TreeOresLogs1.getUnlocalizedName());
         GameRegistry.registerBlock(TreeOresLogs2, TreeOresLogs2ItemBlock.class, TreeOresLogs2.getUnlocalizedName());
         GameRegistry.registerBlock(TreeOresLogs3, TreeOresLogs3ItemBlock.class, TreeOresLogs3.getUnlocalizedName());
@@ -78,5 +79,14 @@ public class TreeOresBlocks {
         GameRegistry.registerBlock(TreeOresBossSaplings1, TreeOresBossSaplings1ItemBlock.class, TreeOresBossSaplings1.getUnlocalizedName());
         GameRegistry.registerBlock(TreeOresBossSaplings2, TreeOresBossSaplings2ItemBlock.class, TreeOresBossSaplings2.getUnlocalizedName());
         GameRegistry.registerBlock(TreeOresBossSaplings3, TreeOresBossSaplings3ItemBlock.class, TreeOresBossSaplings3.getUnlocalizedName());
+        Blocks.fire.setFireInfo(TreeOresLogs1, 5, 5);
+        Blocks.fire.setFireInfo(TreeOresLogs2, 5, 5);
+        Blocks.fire.setFireInfo(TreeOresLogs3, 5, 5);
+        Blocks.fire.setFireInfo(TreeOresLeaves1, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresLeaves2, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresLeaves3, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresBossLeaves1, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresBossLeaves2, 30, 60);
+        Blocks.fire.setFireInfo(TreeOresBossLeaves3, 30, 60);
     }
 }
